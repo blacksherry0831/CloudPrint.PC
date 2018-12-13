@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3935BBB0-0A0F-4BF6-8772-FFC3CF06414E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CloudPrintforPC</RootNamespace>
+    <AssemblyName>CloudPrintforPC</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\terminal20140725\terminal\bin\Debug\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Test\BitmapRegion.cs" />
+    <Compile Include="MyControls\ButtonCenter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyControls\ButtonCircule.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyControls\ButtonNoBorder.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyControls\CircleItemSelectControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyControls\CircleItemSelectControl.Designer.cs">
+      <DependentUpon>CircleItemSelectControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyForm\FormCloudPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyForm\FormCloudPrint.Designer.cs">
+      <DependentUpon>FormCloudPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyForm\FormNetPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyForm\FormNetPrint.Designer.cs">
+      <DependentUpon>FormNetPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyForm\FormPhoneManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyForm\FormPhoneManager.Designer.cs">
+      <DependentUpon>FormPhoneManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyForm\FormStatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyForm\FormStatistics.Designer.cs">
+      <DependentUpon>FormStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControls\PictureBoxCircule.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Test\FileExplorer.cs" />
+    <Compile Include="MyForm\FileTransferForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyForm\FileTransferForm.Designer.cs">
+      <DependentUpon>FileTransferForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyForm\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyForm\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyForm\FormCircleItemSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyForm\FormCircleItemSelect.Designer.cs">
+      <DependentUpon>FormCircleItemSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Test\GetSysiconClass.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MyForm\testForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyForm\testForm.Designer.cs">
+      <DependentUpon>testForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControls\UserControlNetPrintItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControls\UserControlNetPrintItem.Designer.cs">
+      <DependentUpon>UserControlNetPrintItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControls\UserControlNetPrintList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControls\UserControlNetPrintList.Designer.cs">
+      <DependentUpon>UserControlNetPrintList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControls\UserControlPhoneItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControls\UserControlPhoneItem.Designer.cs">
+      <DependentUpon>UserControlPhoneItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControls\UserControlPhoneList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControls\UserControlPhoneList.Designer.cs">
+      <DependentUpon>UserControlPhoneList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Test\WebServer.cs" />
+    <EmbeddedResource Include="MyForm\FileTransferForm.resx">
+      <DependentUpon>FileTransferForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyForm\FormCloudPrint.resx">
+      <DependentUpon>FormCloudPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyForm\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyForm\FormCircleItemSelect.resx">
+      <DependentUpon>FormCircleItemSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyForm\FormNetPrint.resx">
+      <DependentUpon>FormNetPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyForm\FormPhoneManager.resx">
+      <DependentUpon>FormPhoneManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyForm\FormStatistics.resx">
+      <DependentUpon>FormStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="MyForm\testForm.resx">
+      <DependentUpon>testForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\UserControlNetPrintItem.resx">
+      <DependentUpon>UserControlNetPrintItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\UserControlNetPrintList.resx">
+      <DependentUpon>UserControlNetPrintList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\UserControlPhoneItem.resx">
+      <DependentUpon>UserControlPhoneItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\UserControlPhoneList.resx">
+      <DependentUpon>UserControlPhoneList.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaseLib\BaseLib.csproj">
+      <Project>{4b51aa97-c89f-429a-a5ab-c4b3a00e2758}</Project>
+      <Name>BaseLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CloudPrintLib\CloudPrintLib.csproj">
+      <Project>{fb859163-1765-4a42-a129-9c0cc60f2f61}</Project>
+      <Name>CloudPrintLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\terminal20140725\terminal\terminal.csproj">
+      <Project>{E2948079-2536-4B07-9429-07655E8353D6}</Project>
+      <Name>terminal</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_neg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle_pannel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Computer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pointer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\data_statistical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\system_exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone_magager.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_transfer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Title.png" />
+    <None Include="Resources\main_frame_another.png" />
+    <None Include="Resources\BackGround.png" />
+    <None Include="Resources\button2.png" />
+    <Content Include="Resources\net_print.png" />
+    <None Include="Resources\shared_print.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,45 @@
+﻿<Window x:Class="CloudPrint4PC_WPF.WindowCloudPrint.WindowNetPrint"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CloudPrint4PC_WPF.WindowCloudPrint"
+        xmlns:poi="clr-namespace:CloudPrint4PC_WPF"
+        mc:Ignorable="d"
+        Icon="/Img/printer-blue.ico"
+        Title="打印机管理" 
+        Height="618"
+        Width="750">
+    <Window.Background>
+        <VisualBrush TileMode="Tile" 
+                     Viewport="0,0,150,150"
+                     ViewportUnits="Absolute"
+                     AlignmentY="Top"
+                     AlignmentX="Left">
+            <VisualBrush.Visual>
+                <Image Source="/CloudPrint4PC_WPF;component/Img/BackgroundGrid.png">
+
+                </Image>
+            </VisualBrush.Visual>
+        </VisualBrush>
+        <!--<ImageBrush ImageSource="/CloudPrint4PC_WPF;component/Img/BackGroundNew.png" AlignmentX="Left" AlignmentY="Top" TileMode="Tile" Stretch="Uniform"/>-->
+    </Window.Background>
+    <Window.Resources>
+        <DataTemplate x:Key="PrinterManagerItem">
+            <poi:UserControlPrinterItem></poi:UserControlPrinterItem>
+        </DataTemplate>
+    </Window.Resources>
+    <Grid>
+        <ListBox
+            ScrollViewer.HorizontalScrollBarVisibility =  "Disabled" 
+            Background="Transparent"
+            ItemsSource="{Binding Printers}"
+            ItemTemplate="{StaticResource PrinterManagerItem}">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel></WrapPanel>  
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+        </ListBox>
+    </Grid>
+</Window>

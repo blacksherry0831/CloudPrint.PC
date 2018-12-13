@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D6B9B7E2-ABCB-4214-A468-3DD339686E49}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CloudPrint4PC_WPF</RootNamespace>
+    <AssemblyName>CloudPrint4PC_WPF</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'suck|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\suck\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'xxx|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\xxx\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'suck|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\suck\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'xxx|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\xxx\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'suck|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\suck\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'xxx|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\xxx\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Img\printer-blue.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Cinch, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>LibDll\Cinch.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CloudPrintLib\DllLib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework.Aero" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App\App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </ApplicationDefinition>
+    <Compile Include="Data\FileList.cs" />
+    <Compile Include="Update\UpdatePackage.cs" />
+    <Compile Include="UserControl\UserControlPhoneItem.xaml.cs">
+      <DependentUpon>UserControlPhoneItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UserControlPrinterItem.xaml.cs">
+      <DependentUpon>UserControlPrinterItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowCloudPrint\WindowFileTransfer.xaml.cs">
+      <DependentUpon>WindowFileTransfer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowCloudPrint\WindowNetPrint.xaml.cs">
+      <DependentUpon>WindowNetPrint.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowCloudPrint\WindowPhoneManager.xaml.cs">
+      <DependentUpon>WindowPhoneManager.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowCloudPrint\WindowStatistics.xaml.cs">
+      <DependentUpon>WindowStatistics.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TEST\Window_TestPCL.xaml.cs">
+      <DependentUpon>Window_TestPCL.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Data\Resxaml.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\UserControlPhoneItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\UserControlPrinterItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowCloudPrint\CircleWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowCloudPrint\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App\App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="WindowCloudPrint\CircleWindow.xaml.cs">
+      <DependentUpon>CircleWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowCloudPrint\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="WindowCloudPrint\WindowFileTransfer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowCloudPrint\WindowNetPrint.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowCloudPrint\WindowPhoneManager.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowCloudPrint\WindowStatistics.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TEST\Window_TestPCL.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaseLib\BaseLib.csproj">
+      <Project>{4b51aa97-c89f-429a-a5ab-c4b3a00e2758}</Project>
+      <Name>BaseLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CloudPrintLib\CloudPrintLib.csproj">
+      <Project>{fb859163-1765-4a42-a129-9c0cc60f2f61}</Project>
+      <Name>CloudPrintLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FileExplorer1__for_W7_and_VS2010\PIDL\src\app\QuickZip.IO.PIDL\QuickZip.IO.PIDL.csproj">
+      <Project>{09df5a9a-989e-410c-ba72-5a94cf481e57}</Project>
+      <Name>QuickZip.IO.PIDL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FileExplorer1__for_W7_and_VS2010\QuickZip.IO.PIDL.UserControls\QuickZip.IO.PIDL.UserControls.csproj">
+      <Project>{f6a8e9e1-b0b8-41ed-a780-e208c262a111}</Project>
+      <Name>QuickZip.IO.PIDL.UserControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FileExplorer1__for_W7_and_VS2010\QuickZip.UserControls\QuickZip.UserControls.csproj">
+      <Project>{aed294f4-f7f7-4286-88d0-0122846ca526}</Project>
+      <Name>QuickZip.UserControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\log4net-1.2.15-src\log4net-1.2.15\src\log4net.vs2010.csproj">
+      <Project>{181fe707-e161-4722-9f38-6aaab6faa106}</Project>
+      <Name>log4net.vs2010</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\terminal20140725\terminal\terminal.csproj">
+      <Project>{e2948079-2536-4b07-9429-07655e8353d6}</Project>
+      <Name>terminal</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\BackGround.png" />
+    <Resource Include="Img\button.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Img\button2.png" />
+    <Resource Include="Img\button_neg.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Img\circle_pannel.png" />
+    <Resource Include="Img\Computer.png" />
+    <Resource Include="Img\data_statistical.png" />
+    <Resource Include="Img\file_transfer.png" />
+    <Resource Include="Img\ic_launcher.png" />
+    <Resource Include="Img\main_frame_another.png" />
+    <Resource Include="Img\net_print.png" />
+    <Resource Include="Img\phone.png" />
+    <Resource Include="Img\phone_magager.png" />
+    <Resource Include="Img\pointer.png" />
+    <Resource Include="Img\print_out.png" />
+    <Resource Include="Img\refresh.png" />
+    <Resource Include="Img\refresh2.png" />
+    <Resource Include="Img\shared_print.png" />
+    <Resource Include="Img\system_exit.png" />
+    <Resource Include="Img\Title.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\printer-blue.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\file_transfer30x30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\circle_pannel140x140.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\data_statistical30x30.png" />
+    <Resource Include="Img\file_transfer45x45.png" />
+    <Resource Include="Img\net_print30x30.png" />
+    <Resource Include="Img\phone_magager30x30.png" />
+    <Resource Include="Img\shared_print30x30.png" />
+    <Resource Include="Img\system_exit30x30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\data_statistical45x45.png" />
+    <Resource Include="Img\net_print45x45.png" />
+    <Resource Include="Img\phone_magager45x45.png" />
+    <Resource Include="Img\shared_print45x45.png" />
+    <Resource Include="Img\system_exit45x45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\main_frame_another56x136.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\shared_print30x30b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\file_transfer45x45b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\file_transfer30x30bLight.png" />
+    <Resource Include="Img\file_transfer45x45bLight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\data_statistical45x45bLight.png" />
+    <Resource Include="Img\net_print45x45bLight.png" />
+    <Resource Include="Img\phone_magager45x45bLight.png" />
+    <Resource Include="Img\shared_print45x45bLight.png" />
+    <Resource Include="Img\system_exit45x45bLight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\BackGroundNew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\BackgroundGrid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\PcImage.png" />
+    <Resource Include="Img\PhoneImage.png" />
+    <Resource Include="ImgButton\button2.png" />
+    <Content Include="LibDll\gsdll32.dll" />
+    <Content Include="LibDll\Microsoft.Practices.ObjectBuilder2.dll" />
+    <Content Include="LibDll\Microsoft.Practices.Unity.Configuration.dll" />
+    <Content Include="LibDll\Microsoft.Practices.Unity.dll" />
+    <Content Include="LibDll\SLF.dll" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
